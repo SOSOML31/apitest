@@ -1,2 +1,0 @@
-AB123CD;Lisa;Autorisé
-XY987ZT;Marc;Non autorisé
