@@ -1,0 +1,120 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Top Navigation */
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-nav a,
+#darkModeToggle {
+  text-decoration: none;
+  color: #0078d7;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Layout */
+main {
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+}
+
+/* Sidebar Stats */
+.stats-panel {
+  width: 280px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.stats-panel h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.stats-panel ul {
+  list-style: none;
+}
+
+.stats-panel li {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+/* Compressor Section */
+.compressor-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-box {
+  width: 100%;
+  max-width: 600px;
+  background-color: #f0f0f0;
+  border: 2px dashed #aaa;
+  padding: 50px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-box:hover {
+  background-color: #e8e8e8;
+}
+
+.upload-icon {
+  margin-bottom: 15px;
+}
+
+.upload-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.upload-btn {
+  padding: 10px 25px;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.upload-btn i {
+  margin-right: 8px;
+}
+
+.why-title {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #333;
+}
