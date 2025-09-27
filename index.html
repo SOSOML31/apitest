@@ -3,45 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Image Compressor</title>
+  <title>MWANALYSE</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="script.js" defer></script>
+
 </head>
 <body>
   <header>
-    <nav class="top-nav">
-      <button id="darkModeToggle">🌙 Dark Mode</button>
-      <a href="#">User Guide</a>
-      <a href="#">FAQ</a>
-      <a href="#">File Size Calculator</a>
+    <!--<div class="logo">📡</div>-->
+    <nav>
+      <a href="#">Enterprise ?</a>
+      <button class="cta">Se connecter</button>
     </nav>
   </header>
 
   <main>
-    <aside class="stats-panel">
-      <h2>Current Session Stats</h2>
-      <ul>
-        <li><strong>Images Processed:</strong> 0</li>
-        <li><strong>MB Data Reduced:</strong> 0</li>
-        <li><strong>% Average Compression:</strong> 0%</li>
-        <li><strong>Total bandwidth saved:</strong> 0 MB</li>
-        <li><strong>Uploads Needed:</strong> Never</li>
-      </ul>
-    </aside>
-
-    <section class="compressor-section">
-      <div class="upload-box" onclick="document.getElementById('fileInput').click()">
-        <div class="upload-icon">
-          <i class="fas fa-cloud-upload-alt fa-3x" style="color: #0078d7;"></i>
-        </div>
-        <p class="upload-text">Drag & Drop Images Here or Click to Upload<br>(Max 20 images)</p>
-        <button class="upload-btn">
-          <i class="fas fa-folder-open"></i> Select Images
-        </button>
-        <input type="file" id="fileInput" multiple accept="image/*" style="display: none" />
+    <section class="hero">
+          <div class="glass-card">
+    <video id="video" autoplay playsinline></video>
+    <canvas id="canvas"></canvas>
+<br/>
+  <div id="result">📡 En attente de scan...</div>
+  <br/>
+      <h1>IA Alalyse de Plaque d'imatriculation<br /></h1>
+      <p></p>
+      <div class="search-bar">
+        <input type="text" placeholder="Numero plaque d'imatriculation" />
       </div>
-      <h2 class="why-title">Why Choose Our Image Compressor?</h2>
+      <div class="tags">
+        <button>Envoi vers API</button>
+      </div>
+      </div>
     </section>
+
+
+        <section class="promo-section">
+  <div class="promo-content">
+    <h2>Fonctionnement du logiciel</h2>
+    <p>
+      Ce logiciel utilise une intelligence artificielle pour analyser les plaques d'immatriculation des véhicules. Il capture l'image de la plaque, traite l'image pour extraire le texte, puis envoie les données à une API pour obtenir des informations supplémentaires sur le véhicule.
+    </p>
+    <button class="cta">Nous Contacter</button>
+  </div>
+
+  <div class="promo-ui">
+    <div class="ui-card">
+      <p class="prompt">
+        Create an app that helps people keep track of their subscriptions and alerts them to upcoming renewals
+      </p>
+      <img src="asset/plaque.png" alt="AI Generated Image" />
+      <br/>
+      <div class="ui-buttons">
+        <br/>
+        <button>Analyser</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="hero">
+      <h1>Enregistrer une nouvelle plaque<br /></h1>
+        <p></p>
+      <div class="search-bar">
+        <input type="text" placeholder="Noter le numéro de la plaque" />
+      </div>
+      
+      <div class="tags">
+        <button>Enregistrer une plaque</button>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="users">
+        <span>Logiciel by MWCREA</span>
+      </div>
+    </footer>
   </main>
 </body>
 </html>
