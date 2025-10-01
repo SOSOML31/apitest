@@ -7,11 +7,20 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  color: #fff;
-  background: linear-gradient(135deg, #d9b4f3, #ffcba4);
+  color: #333;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+/* Texte en dégradé */
+.gradient-text {
+  background: linear-gradient(to right, #B035F6, #3694FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 /* Header */
@@ -38,7 +47,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: #333;
   font-weight: 500;
   font-size: 1.1rem;
 }
@@ -91,8 +100,8 @@ nav a {
   margin-bottom: 30px;
 }
 
-/* Taille réduite mais lisible */
-#video, #canvas {
+#video,
+#canvas {
   width: 360px;
   height: auto;
   border-radius: 14px;
@@ -127,8 +136,8 @@ nav a {
   border-radius: 12px;
   border: none;
   font-size: 1.1rem;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
+  background-color: rgba(240, 240, 240, 0.8);
+  color: #333;
   backdrop-filter: blur(5px);
 }
 
@@ -142,16 +151,18 @@ nav a {
 }
 
 .tags button {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(240, 240, 240, 0.7);
   padding: 10px 20px;
   border-radius: 25px;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  color: #333;
+  border: none;
 }
 
 .tags button:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(200, 200, 200, 0.4);
 }
 
 /* Footer */
@@ -159,8 +170,10 @@ footer {
   margin-top: auto;
   padding: 30px 6%;
   text-align: center;
+  color: #666;
 }
 
+/* Users */
 .users {
   display: flex;
   justify-content: center;
@@ -171,6 +184,7 @@ footer {
 
 .users button {
   font-size: 1rem;
+  color: #333;
 }
 
 /* Responsive Design */
@@ -202,7 +216,8 @@ footer {
     align-items: center;
   }
 
-  #video, #canvas {
+  #video,
+  #canvas {
     width: 90%;
     max-width: 320px;
   }
@@ -228,12 +243,13 @@ footer {
   }
 }
 
+/* Promo Section */
 .promo-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 80px 6%;
-  background: linear-gradient(135deg, #d9b4f3, #ffcba4);
+  background-color: #f9f9f9;
   flex-wrap: wrap;
   gap: 40px;
 }
@@ -242,7 +258,7 @@ footer {
   flex: 1;
   min-width: 280px;
   max-width: 600px;
-  color: #fff;
+  color: #333;
 }
 
 .promo-content h2 {
@@ -261,6 +277,7 @@ img {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
+/* CTA (dupliqué corrigé) */
 .cta {
   background: linear-gradient(135deg, #a8e6cf, #dcedc1);
   border: none;
@@ -280,6 +297,7 @@ img {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* UI Card */
 .promo-ui {
   flex: 1;
   min-width: 280px;
@@ -291,7 +309,7 @@ img {
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 30px;
-  color: #fff;
+  color: #333;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -308,21 +326,21 @@ img {
 }
 
 .ui-buttons button {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(240, 240, 240, 0.7);
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
-  color: #fff;
+  color: #333;
   font-size: 0.95rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .ui-buttons button:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(200, 200, 200, 0.4);
 }
 
-/* Responsive */
+/* Promo section responsive */
 @media (max-width: 768px) {
   .promo-section {
     flex-direction: column;
